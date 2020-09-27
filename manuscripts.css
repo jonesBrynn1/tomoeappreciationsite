@@ -1,0 +1,166 @@
+/*
+color palette
+light purple: #DBDBDB
+pastel purple: #D0BCC8
+light pink: #FCECDD
+pastel pink: #F6C8CA
+pastel blue: #EBF4F3
+pink: #C260C0
+valentino: #360B3C
+moon: #DFD7F9
+burgandy: #710753
+*/
+
+@font-face{
+  font-family: Moon Bold;
+  src: url('Moon Bold.otf');
+}
+
+body{
+  background-color: #EDCFE7;
+}
+
+.imgHolder {
+  width: 438px;
+  height: 438px;
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+/*Initial image*/
+ .imgHolder::before {
+   content:"";
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+   background-image:url(https://i.imgur.com/ofQUo6G.png);
+   transition: opacity .5s ease-in-out;
+   z-index: 2;
+}
+
+.Home{
+  position: fixed;
+  margin-top: 500px;
+  margin-left: 260px;
+  width: auto;
+  height: auto;
+}
+
+.imgHolder:hover::before {
+    opacity:0;
+}
+
+img{
+  width: 450px;
+  height: 250px;
+}
+
+.imgHolder::after {
+  content:"";
+  background: url(https://i.imgur.com/GRmzo7C.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+div.hidden{
+  position: relative;
+  float: right;
+  margin: 100px;
+  margin-top: 130px;
+  margin-right: 250px;
+  width: 500px;
+  height: auto;
+}
+
+div.background{
+  position: relative;
+  float: right;
+  background-color: #C38BB4;
+  border: white;
+  margin: 15px;
+  width: 500px;
+  height: auto;
+}
+
+div.main{
+  position: relative;
+  background-color: rgba(223,215,249,0.5);
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+div.background2{
+  position: relative;
+  float: right;
+  background-color: #C38BB4;
+  border: white;
+  margin: 15px;
+  width: 500px;
+  height: auto;
+}
+
+div.main2{
+  position: relative;
+  background-color: rgba(223,215,249,0.5);
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+h1{
+  position = absolute;
+  margin-top: -32px;
+  color: #C38BB4;
+  font-family: "Moon Bold";
+}
+
+h2{
+  color: #DFD7F9;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Moon Bold";
+  margin-top: 5px;
+  line-height: 10px;
+}
+
+a{
+  color: #DFD7F9;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Moon Bold";
+  margin-top: 5px;
+  line-height: 10px;
+}
+
+p{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "segoe ui light";
+  font-size: 10px;
+  line-height: 11px;
+}
+
+p.highlight{
+  color: #F9FBFB;
+  font-family: "segoe ui light";
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  text-transform: uppercase;
+}
